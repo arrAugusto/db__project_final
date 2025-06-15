@@ -1,139 +1,115 @@
-🚀 Proyecto ETL: Ventas y Compras - Dashboard Power BI
+# 🚀 Proyecto ETL: Ventas y Compras - Dashboard Power BI
 
-Este proyecto demuestra cómo transformar datos operativos en visualizaciones de alto impacto usando herramientas profesionales de BI. Desde un simple Excel hasta un poderoso dashboard. 💼📊
+Este proyecto demuestra cómo transformar datos operativos en visualizaciones de alto impacto usando herramientas profesionales de inteligencia de negocios. Desde un archivo Excel hasta un dashboard dinámico en Power BI. 💼📊
 
-📁 Estructura del Flujo de Trabajo
+---
 
-1. 📄 Fuente de Datos
+## 📁 Estructura del Flujo de Trabajo
 
-Archivo Excel: origen_ventas_compras.xlsx
+### 1. 📄 Fuente de Datos
 
-Hojas:
+- **Archivo Excel:** `origen_ventas_compras.xlsx`
+- **Hojas:**
+  - `Compras`: contiene datos de adquisiciones
+  - `Ventas`: contiene datos de ventas con información de cliente y vendedor
 
-Compras: contiene datos de adquisiciones
+---
 
-Ventas: contiene datos de ventas con información de cliente y vendedor
+### 2. ⚙️ Proceso ETL (SSIS)
 
-2. ⚙️ Proceso ETL (SSIS)
+- **Herramienta utilizada:** Visual Studio con Integration Services Project
+- **Componentes del flujo:**
+  - Carga desde hoja `Compras` hacia tabla `Fact_Compras`
+  - Carga desde hoja `Ventas` hacia tabla `Fact_Ventas`
 
-Herramienta: Visual Studio con Integration Services Project
+**Diagrama de flujo del paquete SSIS:**
 
-Componentes:
+![Flujo SSIS](https://github.com/user-attachments/assets/8f9b1956-2352-4f86-93b3-a4386cdb2096)
 
-Compras: desde Excel hacia Fact_Compras
+---
 
-Ventas: desde Excel hacia Fact_Ventas
+### 3. 🔄 Transformaciones de Datos
 
-Flujo de control general del paquete SSIS:
+- Conversión de tipos (`Data Conversion`)
+- Búsquedas (`Lookup`) para completar claves foráneas desde dimensiones:
+  - Producto
+  - Cliente
+  - Sucursal
+  - Fecha
 
-📷 Imagen: imagenes/flujo_ssis.png
+**Transformaciones aplicadas:**
 
+![Lookup ETL](https://github.com/user-attachments/assets/3268553e-06ff-4165-a647-82b6060a17e1)
 
-![Screenshot 2025-06-14 201422](https://github.com/user-attachments/assets/8f9b1956-2352-4f86-93b3-a4386cdb2096)
+---
 
-3. 🔄 Transformaciones de Datos
+## 🗄️ Base de Datos SQL Server: `db_project_ventas_compras`
 
-Conversión de tipos (Data Conversion)
+### Tablas utilizadas
 
-Búsquedas (Lookup) en dimensiones:
+- **Tablas de hechos:**
+  - `Fact_Compras`
+  - `Fact_Ventas`
 
-Producto
+- **Tablas de dimensiones:**
+  - `Dim_Producto`
+  - `Dim_Cliente`
+  - `Dim_Proveedor`
+  - `Dim_Sucursal`
+  - `Dim_Fecha`
 
-Cliente
+**Vista del modelo relacional en SQL Server:**
 
-Sucursal
+![Estructura SQL Server](https://github.com/user-attachments/assets/f9c3be76-547e-4986-8d13-2e737435164e)
 
-Fecha
+---
 
-📷 Imagen: imagenes/lookup_etl.png
+## 🧠 Modelo Estrella
 
+El modelo de datos se estructura como estrella, donde las tablas de hechos se relacionan con las dimensiones a través de claves foráneas. Esto permite un análisis ágil y estructurado en Power BI.
 
-![Screenshot 2025-06-14 201242](https://github.com/user-attachments/assets/3268553e-06ff-4165-a647-82b6060a17e1)
+**Modelo en Power BI:**
 
-🗄️ Base de Datos SQL Server: db_project_ventas_compras
+![Modelo Estrella](https://github.com/user-attachments/assets/af6953d3-392c-4916-9398-828c4c48369e)
 
-Tablas utilizadas:
+---
 
-Hechos:
+## 📊 Dashboard Final en Power BI
 
-Fact_Compras
+### Visualizaciones generadas:
 
-Fact_Ventas
+- Suma de unidades vendidas por vendedor
+- Suma de precio unitario por vendedor
+- Lista de clientes y direcciones
+- Total de ventas agregadas
 
-Dimensiones:
+**Captura del dashboard:**
 
-Dim_Producto
+![Dashboard Power BI](https://github.com/user-attachments/assets/42d7289c-7488-4b57-a4cf-083258293bc6)
 
-Dim_Cliente
+---
 
-Dim_Proveedor
+## 🧰 Tecnologías Utilizadas
 
-Dim_Sucursal
+| Tecnología           | Propósito                                                  |
+|----------------------|------------------------------------------------------------|
+| Microsoft Excel      | Fuente de datos inicial (.xlsx)                            |
+| SSIS (Visual Studio) | Extracción, transformación y carga de datos automatizada   |
+| SQL Server           | Almacenamiento estructurado y consulta de datos            |
+| Power BI             | Visualización interactiva y exploración de datos           |
 
-Dim_Fecha
+---
 
-📷 Imagen: imagenes/estructura_sqlserver.png
+## ✅ Resultado Final del Paquete
 
-![Screenshot 2025-06-14 201227](https://github.com/user-attachments/assets/f9c3be76-547e-4986-8d13-2e737435164e)
+**Ejecución del flujo completo:**
 
-🧠 Modelo Estrella
+![Resultado Final](https://github.com/user-attachments/assets/965c1f12-72fe-4ece-a2ac-3c208636cfd1)
 
-Power BI construye relaciones entre hechos y dimensiones para facilitar el análisis.
+---
 
-📷 Imagen: imagenes/modelo_estrella.png
+## 🏁 Conclusión
 
-![Screenshot 2025-06-14 193743](https://github.com/user-attachments/assets/af6953d3-392c-4916-9398-828c4c48369e)
+Este proyecto implementa un flujo completo de integración de datos, transformación y análisis para el área de ventas y compras. Se utilizan herramientas estándar del entorno empresarial para garantizar trazabilidad, escalabilidad y claridad en el análisis de información operativa.
 
-📊 Dashboard Final en Power BI
-
-Visualizaciones:
-
-📈 Suma de Unidades por Vendedor
-
-💵 Suma de Precio Unitario por Vendedor
-
-📋 Lista de Clientes y Direcciones
-
-🔢 Total de ventas
-
-📷 Imagen: imagenes/dashboard_powerbi.png
-
-
-
-![Screenshot 2025-06-14 201615](https://github.com/user-attachments/assets/42d7289c-7488-4b57-a4cf-083258293bc6)
-
-
-🧰 Tecnologías Utilizadas ![Screenshot 2025-06-14 201615](https://github.com/user-attachments/assets/9eb6a34d-ce30-4f69-aae0-04757202fee1)
-
-Tecnología
-
-Propósito
-
-Microsoft Excel
-
-Fuente de datos inicial (.xlsx)
-
-SSIS (Visual Studio)
-
-ETL: extracción, transformación y carga automatizada
-
-SQL Server
-
-Base de datos relacional para almacenamiento estructurado
-
-Power BI
-
-Visualización interactiva y análisis de métricas
-
-✅ Resultado Final del Paquete
-
-📷 Imagen: imagenes/resultado_final.png
-
-(![Screenshot 2025-06-14 201227](https://github.com/user-attachments/assets/965c1f12-72fe-4ece-a2ac-3c208636cfd1)
-
-
-🏁 Conclusión
-
-Este proyecto implementa de forma práctica y completa un flujo de Business Intelligence moderno, aprovechando herramientas ampliamente utilizadas en el entorno empresarial. Desde datos en Excel hasta dashboards que toman decisiones, se muestra un flujo automatizado y escalable. Ideal para escenarios reales en áreas de ventas, compras o reporting operativo.
-
-🔧 Proyecto construido con fines educativos y demostrativos.
+> Proyecto desarrollado con fines educativos y de demostración técnica.
