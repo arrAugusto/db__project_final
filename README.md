@@ -102,8 +102,8 @@ Visualizaciones:
 
 ![Dashboard](![Screenshot 2025-06-14 201615](https://github.com/user-attachments/assets/42d7289c-7488-4b57-a4cf-083258293bc6))
 
-🧰 Tecnologías Utilizadas![Uploading Screenshot 2025-06-14 201615.png…]()
 
+🧰 Tecnologías Utilizadas ![Screenshot 2025-06-14 201615](https://github.com/user-attachments/assets/9eb6a34d-ce30-4f69-aae0-04757202fee1)
 
 Tecnología
 
