@@ -29,7 +29,7 @@ Flujo de control general del paquete SSIS:
 📷 Imagen: imagenes/flujo_ssis.png
 
 
-![Flujo SSIS](![Screenshot 2025-06-14 201422](https://github.com/user-attachments/assets/8f9b1956-2352-4f86-93b3-a4386cdb2096))
+![Screenshot 2025-06-14 201422](https://github.com/user-attachments/assets/8f9b1956-2352-4f86-93b3-a4386cdb2096)
 
 3. 🔄 Transformaciones de Datos
 
@@ -48,7 +48,7 @@ Fecha
 📷 Imagen: imagenes/lookup_etl.png
 
 
-![Lookup](![Screenshot 2025-06-14 201242](https://github.com/user-attachments/assets/3268553e-06ff-4165-a647-82b6060a17e1))
+![Screenshot 2025-06-14 201242](https://github.com/user-attachments/assets/3268553e-06ff-4165-a647-82b6060a17e1)
 
 🗄️ Base de Datos SQL Server: db_project_ventas_compras
 
@@ -74,7 +74,7 @@ Dim_Fecha
 
 📷 Imagen: imagenes/estructura_sqlserver.png
 
-![Tablas](![Screenshot 2025-06-14 201227](https://github.com/user-attachments/assets/f9c3be76-547e-4986-8d13-2e737435164e))
+![Screenshot 2025-06-14 201227](https://github.com/user-attachments/assets/f9c3be76-547e-4986-8d13-2e737435164e)
 
 🧠 Modelo Estrella
 
@@ -82,7 +82,7 @@ Power BI construye relaciones entre hechos y dimensiones para facilitar el anál
 
 📷 Imagen: imagenes/modelo_estrella.png
 
-![Modelo Estrella](![Screenshot 2025-06-14 193743](https://github.com/user-attachments/assets/af6953d3-392c-4916-9398-828c4c48369e))
+![Screenshot 2025-06-14 193743](https://github.com/user-attachments/assets/af6953d3-392c-4916-9398-828c4c48369e)
 
 📊 Dashboard Final en Power BI
 
@@ -100,7 +100,7 @@ Visualizaciones:
 
 
 
-![Dashboard](![Screenshot 2025-06-14 201615](https://github.com/user-attachments/assets/42d7289c-7488-4b57-a4cf-083258293bc6))
+![Screenshot 2025-06-14 201615](https://github.com/user-attachments/assets/42d7289c-7488-4b57-a4cf-083258293bc6)
 
 
 🧰 Tecnologías Utilizadas ![Screenshot 2025-06-14 201615](https://github.com/user-attachments/assets/9eb6a34d-ce30-4f69-aae0-04757202fee1)
@@ -129,7 +129,7 @@ Visualización interactiva y análisis de métricas
 
 📷 Imagen: imagenes/resultado_final.png
 
-![SSIS Final](![Screenshot 2025-06-14 201227](https://github.com/user-attachments/assets/965c1f12-72fe-4ece-a2ac-3c208636cfd1))
+(![Screenshot 2025-06-14 201227](https://github.com/user-attachments/assets/965c1f12-72fe-4ece-a2ac-3c208636cfd1)
 
 
 🏁 Conclusión
