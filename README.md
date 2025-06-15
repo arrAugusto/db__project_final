@@ -1,6 +1,6 @@
 🚀 Proyecto ETL: Ventas y Compras - Dashboard Power BI
 
-Este proyecto demuestra cómo transformar datos operativos en visualizaciones de alto impacto usando herramientas profesionales de BI. Desde un simple Excel hasta un poderoso dashboard, aquí vendo todo el humo... y funciona. 💼📊
+Este proyecto demuestra cómo transformar datos operativos en visualizaciones de alto impacto usando herramientas profesionales de BI. Desde un simple Excel hasta un poderoso dashboard. 💼📊
 
 📁 Estructura del Flujo de Trabajo
 
@@ -136,5 +136,4 @@ Visualización interactiva y análisis de métricas
 
 Este proyecto implementa de forma práctica y completa un flujo de Business Intelligence moderno, aprovechando herramientas ampliamente utilizadas en el entorno empresarial. Desde datos en Excel hasta dashboards que toman decisiones, se muestra un flujo automatizado y escalable. Ideal para escenarios reales en áreas de ventas, compras o reporting operativo.
 
-🔧 Proyecto construido con fines educativos y demostrativos. Humo incluido, funcionalidad garantizada. ✨
-
+🔧 Proyecto construido con fines educativos y demostrativos.
